@@ -1,0 +1,184 @@
+header,body {
+    font-family: Bungee;
+}
+
+.logo {
+    display: block;
+    float: left;
+    margin: 5px 35px 5px 35px;
+    height: 12vh;
+    padding-bottom: 15px;
+
+}
+
+ul {
+    list-style: none;
+}
+
+#navBar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 35px;
+    margin-left: auto;
+    padding: 35px 0 35px 0;
+}
+
+#navBar li {
+    display: block;
+    float: right;
+    margin-left: 20px;
+}
+
+#navBar a, a {
+    display: block;
+    padding: 3px;
+    text-decoration: none;
+    color: #7944e6;
+}
+
+#navBar a:hover,a:hover {
+    color: #10fdff;
+}
+
+.about {
+    background-color: #ff00ff;
+    padding: 15px 35px 5px 35px;
+    margin: 5px 35px 5px 35px;
+}
+
+.foodTruck{
+    display: block;
+    height: 40%;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+.aboutHeader,.lorem {
+    text-align: left;
+    display: inline-block;
+    margin-top: 0;
+}
+
+.aboutHeader{
+    margin-bottom: 0;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 15px 150px 25px 150px;
+}
+
+.card {
+    border: 5px solid #7944e6;
+    flex: 0 1 24%;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+.coffee,.cream,.cookies {
+    display: inline-block;
+    margin-bottom: 45px;
+}
+
+.coffeePic,.creamPic,.cookiesPic {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40vh;
+    object-fit: scale-down;
+}
+
+.cardHeader,.viewMenu {
+    text-align: center;
+}
+
+
+/* Code below is for Desktop View */
+
+@media (min-width: 768px) {
+   html {
+        box-sizing: content-box;
+    } 
+
+    .logo {
+        padding-top: 0;
+        padding-bottom: 5px;
+        height: 15vh;
+        width: 18vw;
+    }
+
+    .about {
+        background-color: #ff00ff;
+        padding: 5px 45px 5px 45px;
+        margin: 35px 35px 0 45px;
+        height: 450px;
+        width: 85vw;
+        display: inline-block;
+    }
+
+    .aboutHeader,.lorem {
+        text-align: left;
+        display: inline-block;
+        clear: left;
+        margin-top: 0;
+        margin-right: 0;
+        object-position: right;
+        object-fit: fill;
+    }
+
+    .aboutHeader{
+        margin-bottom: 0;
+    }
+
+    .lorem,#navBar,.viewMenu {
+        font-size: 1.5em;
+    }
+
+    .aboutHeader,.cardHeader {
+        font-size: 1.75em;
+    }
+
+    .aboutDesktop { 
+        display: block;
+        float: right;
+        margin: 50px 0 35px 5px;
+        padding: 25px 0 5px 5px;
+        width: 40vw;
+        height: 50vh;
+    }
+
+    .foodTruck{
+        display: block;
+        float: left;
+        clear: right;
+        height: 35vh;
+        width: 45%;
+        margin: 25px 0 25px 0;
+        padding: 25px 0 0 0;
+        object-position: left;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+        width: 100vw;
+        padding: 0px 100px 0px 100px;
+        margin-top: 5px;
+       
+    }
+
+    .card {
+        border: 5px solid #7944e6;
+        width: 50vw;
+        height: 60vh;
+        margin: 10px;
+        padding-right: 20px;   
+    }
+
+}
